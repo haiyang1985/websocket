@@ -15,9 +15,6 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
-/**
- * @author hy_gu on 2019/3/9
- **/
 @Service
 public class WebSocketServer {
 

@@ -24,9 +24,6 @@ import java.util.concurrent.TimeUnit;
 import static io.netty.handler.codec.http.HttpHeaders.isKeepAlive;
 import static io.netty.handler.codec.http.HttpHeaders.setContentLength;
 
-/**
- * @author hy_gu on 2019/3/9
- **/
 public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> {
     private WebSocketServerHandshaker handshaker;
 
