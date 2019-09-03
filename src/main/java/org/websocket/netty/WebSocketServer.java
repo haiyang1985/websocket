@@ -46,8 +46,6 @@ public class WebSocketServer {
             b.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class).childHandler(new MyChannelInitializer());
 
             Channel ch = b.bind(port).sync().channel();
-            System.out.println("Web Socket server started at port " + port);
-            System.out.println("Open your browser and navigate to http://localhost:" + port);
             ch.closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();
